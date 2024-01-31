@@ -1,0 +1,42 @@
+.table-container {
+    height: 500px;
+    /* set the height of the table container */
+    overflow-y: scroll;
+    /* enable vertical scrolling */
+}
+
+.table {
+    width: 100%;
+    /* make the table take the full width of its container */
+    border-collapse: collapse;
+    /* remove the default spacing between table cells */
+}
+
+.table-header{
+    position: relative;
+}
+
+.table th,
+.table td {
+    padding: 0px;
+    /* add some padding to table cells */
+    text-align: left;
+    /* align text to the left */
+    border: 1px solid #ddd;
+    /* add borders to table cells */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    /* add a light gray background to table headers */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* add a light gray background to even table rows */
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+    /* add a darker gray background to table rows on hover */
+}
